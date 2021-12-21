@@ -1,0 +1,16 @@
+[user]
+	name = DyakonovAlex
+	email = 79167505551@yandex.ru
+[core]
+	editor = nvim
+# Comment: This is to unlock Visual Studio Code as your Git diff and Git merge tool
+[merge]
+	conflictstyle = diff3
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+# Comment: End of "Extra Block"
